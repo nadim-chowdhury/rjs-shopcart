@@ -67,3 +67,14 @@
 
 /* Footer Style */
 
+footer {
+  background-color: var(--color-131921);
+}
+
+.subscribe {
+  background-color: var(--color-febd69);
+}
+
+footer:not(:first-child) {
+  border-top: 2px solid var(--color-3b4149);
+}

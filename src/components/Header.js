@@ -106,17 +106,17 @@ export default function Header() {
                     <ul class="dropdown-menu">
                       <li>
                         <Link className="dropdown-item text-white" to="/">
-                          Action
+                          Mobiles
                         </Link>
                       </li>
                       <li>
                         <Link className="dropdown-item text-white" to="/">
-                          Another action
+                          Laptops
                         </Link>
                       </li>
                       <li>
                         <Link className="dropdown-item text-white" to="/">
-                          Something else here
+                          Accessories
                         </Link>
                       </li>
                     </ul>
