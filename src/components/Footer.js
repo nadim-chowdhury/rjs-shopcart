@@ -77,6 +77,9 @@ export default function Footer() {
               <h4 className="text-white mb-3">Information</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="text-white py-2" to="/">
+                  Terms & Conditions
+                </Link>
+                <Link className="text-white py-2" to="/">
                   Privacy Policy
                 </Link>
                 <Link className="text-white py-2" to="/">
@@ -84,9 +87,6 @@ export default function Footer() {
                 </Link>
                 <Link className="text-white py-2" to="/">
                   Shipping Policy
-                </Link>
-                <Link className="text-white py-2" to="/">
-                  Terms & Conditions
                 </Link>
               </div>
             </div>
@@ -117,10 +117,10 @@ export default function Footer() {
                   Laptops
                 </Link>
                 <Link className="text-white py-2" to="/">
-                  Watch
+                  Accessories
                 </Link>
                 <Link className="text-white py-2" to="/">
-                  Accessories
+                  Watch
                 </Link>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function Footer() {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <p className="text-align-center text-white mb-0 p-2">
+              <p className="d-flex text-align-center text-white mb-0">
                 &copy; {new Date().getFullYear()} All Rights Reserved by Nadim
                 Chowdhury
               </p>
