@@ -2,6 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/ProductCard";
 
 export default function Home() {
   return (
@@ -252,9 +253,59 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="blog-wrapper pt-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading mb-5">Featured Collections</h3>
+            </div>
+
+            <ProductCard
+              brand="Xiaomi"
+              title="HD Android Tv"
+              imgSrc="images/tv.jpg"
+            />
+
+            <ProductCard
+              brand="Rolex"
+              title="Rolex Watch"
+              imgSrc="images/watch.jpg"
+            />
+
+            <ProductCard
+              brand="Apple"
+              title="MacBook Pro"
+              imgSrc="images/laptop.jpg"
+            />
+
+            <ProductCard
+              brand="Sony"
+              title="Mirrorless Cam"
+              imgSrc="images/camera.jpg"
+            />
+
+            <ProductCard
+              brand="Apple"
+              title="Air Buds"
+              imgSrc=" images/acc.jpg"
+            />
+
+            <ProductCard
+              brand="boAt"
+              title="Sound Speaker"
+              imgSrc="images/speaker.jpg"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="blog-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading mb-5">Our Latest Blogs</h3>
+            </div>
+
             <BlogCard
               title="Amazing Tools For Daily Use"
               imgSrc="https://images.pexels.com/photos/7821597/pexels-photo-7821597.jpeg"

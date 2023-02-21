@@ -33,15 +33,15 @@ export default function Header() {
               </h2>
             </div>
             <div className="col-5">
-              <div class="input-group">
+              <div className="input-group">
                 <input
                   type="text"
-                  class="form-control py-2"
+                  className="form-control py-2"
                   placeholder="Search Your Product Here"
                   aria-label="Search Your Product Here"
                   aria-describedby="basic-addon2"
                 />
-                <span class="input-group-text px-4" id="basic-addon2">
+                <span className="input-group-text px-4" id="basic-addon2">
                   <BsSearch />
                 </span>
               </div>
@@ -93,9 +93,9 @@ export default function Header() {
             <div className="col-12">
               <div className="menu-bottom d-flex align-items-center gap-15">
                 <div>
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <button
-                      class="btn btn-secondary dropdown-toggle bg-transparent gap-20 d-flex align-items-center"
+                      className="btn btn-secondary dropdown-toggle bg-transparent gap-20 d-flex align-items-center"
                       type="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
@@ -103,7 +103,7 @@ export default function Header() {
                       <img src="images/menu.svg" alt="img" />
                       <span>Categories</span>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul className="dropdown-menu">
                       <li>
                         <Link className="dropdown-item text-white" to="/">
                           Mobiles

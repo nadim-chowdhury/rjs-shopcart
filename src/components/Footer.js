@@ -16,10 +16,10 @@ export default function Footer() {
             </div>
 
             <div className="col-7">
-              <div class="input-group">
+              <div className="input-group">
                 <input
                   type="text"
-                  class="form-control py-2"
+                  className="form-control py-2"
                   placeholder="Enter Your Email"
                   aria-label="Enter Your Email"
                   aria-describedby="basic-addon2"
@@ -77,16 +77,16 @@ export default function Footer() {
               <h4 className="text-white mb-3">Information</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="text-white py-2" to="/">
-                  Terms & Conditions
-                </Link>
-                <Link className="text-white py-2" to="/">
                   Privacy Policy
                 </Link>
                 <Link className="text-white py-2" to="/">
-                  Refund Policy
+                  Shipping Policy
                 </Link>
                 <Link className="text-white py-2" to="/">
-                  Shipping Policy
+                  Terms & Conditions
+                </Link>
+                <Link className="text-white py-2" to="/">
+                  Refund Policy
                 </Link>
               </div>
             </div>
@@ -97,10 +97,10 @@ export default function Footer() {
                   About Us
                 </Link>
                 <Link className="text-white py-2" to="/">
-                  F.A.Q
+                  Contact
                 </Link>
                 <Link className="text-white py-2" to="/">
-                  Contact
+                  F.A.Q
                 </Link>
                 <Link className="text-white py-2" to="/">
                   My Account
@@ -111,16 +111,16 @@ export default function Footer() {
               <h4 className="text-white mb-3">Quick Links</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="text-white py-2" to="/">
-                  Mobiles
+                  Laptops
                 </Link>
                 <Link className="text-white py-2" to="/">
-                  Laptops
+                  Mobiles
                 </Link>
                 <Link className="text-white py-2" to="/">
                   Accessories
                 </Link>
                 <Link className="text-white py-2" to="/">
-                  Watch
+                  Watches
                 </Link>
               </div>
             </div>
@@ -131,8 +131,14 @@ export default function Footer() {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <p className="d-flex text-align-center text-white mb-0">
-                <span className="copy">&copy;</span> {new Date().getFullYear()}{" "}
+              <p className="d-flex justify-content-center text-white mb-0 text-uppercase">
+                <span className="copy">&copy;</span>
+                <span
+                  className="me-2 px-2 rounded text-black"
+                  style={{ backgroundColor: "#febd69" }}
+                >
+                  {new Date().getFullYear()}
+                </span>
                 All Rights Reserved by Nadim Chowdhury
               </p>
             </div>
