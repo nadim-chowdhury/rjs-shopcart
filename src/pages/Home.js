@@ -1,5 +1,7 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
+import BlogCard from "../components/BlogCard";
 
 export default function Home() {
   return (
@@ -93,7 +95,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="home-wrapper-2 py-5">
+      <section className="home-wrapper-2 pt-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -135,6 +137,141 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="categories d-flex justify-content-between align-items-center flex-wrap">
+                <div className="d-flex gap-10 align-items-center justify-content-around">
+                  <div>
+                    <h6>Laptops</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/laptop.jpg" alt="img" />
+                </div>
+
+                <div className="d-flex gap-10 align-items-center justify-content-around">
+                  <div>
+                    <h6>Headphones</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/headphone.jpg" alt="img" />
+                </div>
+
+                <div className="d-flex gap-10 align-items-center justify-content-around">
+                  <div>
+                    <h6>Smart TV</h6>
+                    <p>14 Items</p>
+                  </div>
+                  <img src="images/tv.jpg" alt="img" />
+                </div>
+
+                <div className="d-flex gap-10 align-items-center justify-content-around">
+                  <div>
+                    <h6>Smart Watches</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/watch.jpg" alt="img" />
+                </div>
+
+                <div className="d-flex gap-10 align-items-center justify-content-around">
+                  <div>
+                    <h6>Cameras</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/camera.jpg" alt="img" />
+                </div>
+
+                <div className="d-flex gap-10 align-items-center justify-content-around">
+                  <div>
+                    <h6>Speakers</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/speaker.jpg" alt="img" />
+                </div>
+
+                <div className="d-flex gap-10 align-items-center justify-content-around">
+                  <div>
+                    <h6>Accessories</h6>
+                    <p>14 Items</p>
+                  </div>
+                  <img src="images/acc.jpg" alt="img" />
+                </div>
+
+                <div className="d-flex gap-10 align-items-center justify-content-around">
+                  <div>
+                    <h6>Home Appliances</h6>
+                    <p>6 Items</p>
+                  </div>
+                  <img src="images/homeapp.jpg" alt="img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="marquee-wrapper py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="marquee-inner-wrapper bg-white p-3">
+                <Marquee className="d-flex justify-content-between">
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-01.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-02.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-03.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-04.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-05.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-06.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-07.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-08.png" alt="img" />
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="blog-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <BlogCard
+              title="Amazing Tools For Daily Use"
+              imgSrc="https://images.pexels.com/photos/7821597/pexels-photo-7821597.jpeg"
+            />
+            <BlogCard
+              title="Get Your Desire Products"
+              imgSrc="https://images.pexels.com/photos/4526407/pexels-photo-4526407.jpeg"
+            />
+            <BlogCard
+              title="EveryThing You Need"
+              imgSrc="https://images.pexels.com/photos/7693229/pexels-photo-7693229.jpeg"
+            />
+
+            <BlogCard
+              title="Buy Anytime, Anywhere"
+              imgSrc="https://images.pexels.com/photos/235209/pexels-photo-235209.jpeg"
+            />
           </div>
         </div>
       </section>

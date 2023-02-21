@@ -54,15 +54,15 @@ export default function Footer() {
                   </a>
                   <a
                     className="text-white me-2"
-                    href="https://github.com/nadim-chowdhury"
-                  >
-                    <BsGithub />
-                  </a>
-                  <a
-                    className="text-white me-2"
                     href="https://www.linkedin.com/in/nadim-chowdhury"
                   >
                     <BsLinkedin />
+                  </a>
+                  <a
+                    className="text-white me-2"
+                    href="https://github.com/nadim-chowdhury"
+                  >
+                    <BsGithub />
                   </a>
                   <a
                     className="text-white"
@@ -132,8 +132,8 @@ export default function Footer() {
           <div className="row">
             <div className="col-12">
               <p className="d-flex text-align-center text-white mb-0">
-                &copy; {new Date().getFullYear()} All Rights Reserved by Nadim
-                Chowdhury
+                <span className="copy">&copy;</span> {new Date().getFullYear()}{" "}
+                All Rights Reserved by Nadim Chowdhury
               </p>
             </div>
           </div>

@@ -9,13 +9,13 @@ export default function Header() {
         <div className="container-xxl">
           <div className="row">
             <div className="col-6">
-              <p className="text-white mb-0">
+              <p className="text-white mb-0 text-uppercase">
                 Free Shiping Over $100 & Free Returns
               </p>
             </div>
             <div className="col-6">
-              <p className="text-end text-white mb-0">
-                Hotline: 880 1971 258803 - 880 1831 125227
+              <p className="text-end text-white mb-0 text-uppercase me-1">
+                Hotline : 880 1831 125227 - 880 1971 258803
               </p>
             </div>
           </div>
