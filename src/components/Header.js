@@ -127,10 +127,10 @@ export default function Header() {
                     <NavLink className="text-white" to="/">
                       Home
                     </NavLink>
-                    <NavLink className="text-white" to="store">
+                    <NavLink className="text-white" to="ourstore">
                       Store
                     </NavLink>
-                    <NavLink className="text-white" to="blog">
+                    <NavLink className="text-white" to="blogs">
                       Blogs
                     </NavLink>
                     <NavLink className="text-white" to="contact">

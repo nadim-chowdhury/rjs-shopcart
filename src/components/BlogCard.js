@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function BlogCard(props) {
   return (
-    <div className="col-3">
+    <div className="col-3 mb-4">
       <div className="blog-card">
         <div className="card-image">
           <img src={props.imgSrc} className="img-fluid" alt="img" />

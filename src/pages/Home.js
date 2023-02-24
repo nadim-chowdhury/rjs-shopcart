@@ -1,12 +1,16 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
 
 export default function Home() {
   return (
-    <>
+    <div>
+      <Helmet>
+        <title>ShopCart</title>
+      </Helmet>
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -100,7 +104,7 @@ export default function Home() {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="services d-flex justify-content-between align-items-center">
+              <div className="services d-flex justify-content-between align-items-center py-5">
                 <div className="d-flex align-items-center gap-15">
                   <img src="images/service.png" alt="img" />
                   <div>
@@ -142,7 +146,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="home-wrapper-2 py-5">
+      <section className="home-wrapper-2 pt-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -216,44 +220,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="marquee-wrapper py-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <div className="marquee-inner-wrapper bg-white p-3">
-                <Marquee className="d-flex justify-content-between">
-                  <div className="mx-4 mq-img w-25">
-                    <img src="images/brand-01.png" alt="img" />
-                  </div>
-                  <div className="mx-4 mq-img w-25">
-                    <img src="images/brand-02.png" alt="img" />
-                  </div>
-                  <div className="mx-4 mq-img w-25">
-                    <img src="images/brand-03.png" alt="img" />
-                  </div>
-                  <div className="mx-4 mq-img w-25">
-                    <img src="images/brand-04.png" alt="img" />
-                  </div>
-                  <div className="mx-4 mq-img w-25">
-                    <img src="images/brand-05.png" alt="img" />
-                  </div>
-                  <div className="mx-4 mq-img w-25">
-                    <img src="images/brand-06.png" alt="img" />
-                  </div>
-                  <div className="mx-4 mq-img w-25">
-                    <img src="images/brand-07.png" alt="img" />
-                  </div>
-                  <div className="mx-4 mq-img w-25">
-                    <img src="images/brand-08.png" alt="img" />
-                  </div>
-                </Marquee>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="blog-wrapper pt-5 home-wrapper-2">
+      <section className="blog-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -299,6 +266,43 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="marquee-wrapper py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="marquee-inner-wrapper bg-white p-3">
+                <Marquee className="d-flex justify-content-between">
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-01.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-02.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-03.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-04.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-05.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-06.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-07.png" alt="img" />
+                  </div>
+                  <div className="mx-4 mq-img w-25">
+                    <img src="images/brand-08.png" alt="img" />
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="blog-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
@@ -326,6 +330,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

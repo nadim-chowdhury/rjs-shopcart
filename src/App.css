@@ -222,3 +222,42 @@ footer:not(:first-child) {
 .action-bar img:hover {
   background-color: var(--color-febd69);
 }
+
+/* Special Product card */
+
+.special-product-card {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.special-product-content h6 {
+  color: var(--color-bf4800);
+}
+
+.price span {
+  color: var(--color-bf4800);
+}
+
+/* Our Store */
+
+.filter-card{
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.min-max input{
+  background-color: rgb(224, 224, 224);
+}
+
+.mlr{
+  margin: 0 15px 0 15px;
+}
+
+.store-wrapper{
+  background-color: var(--color-f5f5f7);
+}
+.blog-wrapper{
+  background-color: var(--color-f5f5f7);
+}
