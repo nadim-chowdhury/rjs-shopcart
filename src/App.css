@@ -241,23 +241,44 @@ footer:not(:first-child) {
 
 /* Our Store */
 
-.filter-card{
+.filter-card {
   background-color: white;
   border-radius: 10px;
   padding: 15px;
 }
 
-.min-max input{
+.min-max input {
   background-color: rgb(224, 224, 224);
 }
 
-.mlr{
+.mlr {
   margin: 0 15px 0 15px;
 }
 
-.store-wrapper{
+.store-wrapper {
   background-color: var(--color-f5f5f7);
 }
-.blog-wrapper{
+
+.blog-wrapper {
+  background-color: var(--color-f5f5f7);
+}
+
+.contact-wrapper {
+  background-color: var(--color-f5f5f7);
+}
+
+.compare-product-card {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.login-card {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-card input {
   background-color: var(--color-f5f5f7);
 }
