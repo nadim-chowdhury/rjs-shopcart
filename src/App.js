@@ -11,6 +11,7 @@ import CompareProduct from "./pages/CompareProduct";
 import Wishlist from "./pages/Wishlist";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
+import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="wishlist" element={<Wishlist />} />
             <Route path="login" element={<Login />} />
             <Route path="cart" element={<Cart />} />
+            <Route exact path="/products/:id" element={<ProductDetails />} />
           </Route>
         </Routes>
       </Router>

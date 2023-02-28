@@ -16,6 +16,19 @@ const CompareProduct = () => {
             <div className="col-3">
               <div className="compare-product-card">
                 <div className="product-card-image">
+                  <img src="images/tv.jpg" alt="img" />
+                </div>
+                <div className="compare-product-details">
+                  <h3 className="title">Demo Product</h3>
+                  <h5 style={{ color: "#bf4800" }} className="price">
+                    $151
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="compare-product-card">
+                <div className="product-card-image">
                   <img src="images/watch.jpg" alt="img" />
                 </div>
                 <div className="compare-product-details">
@@ -39,19 +52,7 @@ const CompareProduct = () => {
                 </div>
               </div>
             </div>
-            <div className="col-3">
-              <div className="compare-product-card">
-                <div className="product-card-image">
-                  <img src="images/tv.jpg" alt="img" />
-                </div>
-                <div className="compare-product-details">
-                  <h3 className="title">Demo Product</h3>
-                  <h5 style={{ color: "#bf4800" }} className="price">
-                    $151
-                  </h5>
-                </div>
-              </div>
-            </div>
+
             <div className="col-3">
               <div className="compare-product-card">
                 <div className="product-card-image">

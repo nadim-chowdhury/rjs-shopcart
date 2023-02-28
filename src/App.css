@@ -282,3 +282,12 @@ footer:not(:first-child) {
 .login-card input {
   background-color: var(--color-f5f5f7);
 }
+
+.all-product-card img{
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+}
+
+
+

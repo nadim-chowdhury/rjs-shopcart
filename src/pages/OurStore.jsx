@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import BreadCrumb from "../components/BreadCrumb";
-import SpecialProduct from "../components/SpecialProduct";
+import Product from "../components/Product";
 
 const OurStore = () => {
+  const [product, setProduct] = useState([]);
+
+  const fetchData = () => {
+    return fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((data) => setProduct(data));
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div>
       <Helmet>
@@ -113,6 +125,7 @@ const OurStore = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-9">
               <div className="filter-sort-grid">
                 <div className="d-flex align-items-center gap-10 filter-card mlr">
@@ -126,18 +139,9 @@ const OurStore = () => {
                 </div>
 
                 <div className="all-products d-flex justify-content-between flex-wrap mt-4">
-                  <SpecialProduct src="images/acc.jpg" />
-                  <SpecialProduct src="images/laptop.jpg" />
-                  <SpecialProduct src="images/headphone.jpg" />
-                  <SpecialProduct src="images/laptop.jpg" />
-                  <SpecialProduct src="images/headphone.jpg" />
-                  <SpecialProduct src="images/acc.jpg" />
-                  <SpecialProduct src="images/acc.jpg" />
-                  <SpecialProduct src="images/laptop.jpg" />
-                  <SpecialProduct src="images/headphone.jpg" />
-                  <SpecialProduct src="images/laptop.jpg" />
-                  <SpecialProduct src="images/headphone.jpg" />
-                  <SpecialProduct src="images/acc.jpg" />
+                  {product.map((productData) => {
+                    return <Product product={productData} />;
+                  })}
                 </div>
               </div>
             </div>

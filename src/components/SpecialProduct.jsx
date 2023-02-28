@@ -4,18 +4,16 @@ import { Link } from "react-router-dom";
 
 const SpecialProduct = ({ src }) => {
   return (
-    <div style={{ width: "46%" }} className="m-3">
+    <div className="col-4">
       <div className="special-product-card">
-        <div className="d-flex justify-content-between">
-          <div className="d-flex flex-column align-items-center">
-            <img className="me-4" src={src} alt="img" />
-            <div className="d-flex justify-content-between me-4">
-              <img style={{ width: "45%" }} src={src} alt="img" />
-              <img style={{ width: "45%" }} src={src} alt="img" />
-            </div>
+        <div className="">
+          <div className="d-flex justify-content-center special-product">
+            <img src={src} alt="img" />
+            <img src={src} alt="img" />
+            <img src={src} alt="img" />
           </div>
-          <div className="special-product-content">
-            <h6 className="brand">BrandaAme</h6>
+          <div className="special-product-content mt-4">
+            <h6 className="brand">BrandName</h6>
             <h4>This is a Demo Test Product Title</h4>
             <ReactStars
               style={{ color: "#febd69" }}

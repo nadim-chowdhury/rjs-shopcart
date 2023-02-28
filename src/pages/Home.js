@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
+import SpecialProduct from "../components/SpecialProduct";
 
 export default function Home() {
   return (
@@ -262,6 +263,22 @@ export default function Home() {
               title="Sound Speaker"
               imgSrc="images/speaker.jpg"
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="blog-wrapper pb-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading mb-5">Special Products</h3>
+            </div>
+            <SpecialProduct width='col-3' src="images/headphone.jpg" />
+            <SpecialProduct width='col-3' src="images/laptop.jpg" />
+            <SpecialProduct width='col-3' src="images/acc.jpg" />
+            <SpecialProduct width='col-3' src="images/acc.jpg" />
+            <SpecialProduct width='col-3' src="images/laptop.jpg" />
+            <SpecialProduct width='col-3' src="images/headphone.jpg" />
           </div>
         </div>
       </section>
