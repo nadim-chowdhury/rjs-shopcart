@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const SpecialProduct = ({ src }) => {
   return (
     <div className="col-4">
-      <div className="special-product-card">
-        <div className="">
+      <div className="special-product-card mb-4">
+        <div className="d-flex flex-column">
           <div className="d-flex justify-content-center special-product">
             <img src={src} alt="img" />
             <img src={src} alt="img" />

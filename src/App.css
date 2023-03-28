@@ -283,11 +283,12 @@ footer:not(:first-child) {
   background-color: var(--color-f5f5f7);
 }
 
-.all-product-card img{
+.all-product-card img {
   width: 120px;
   height: 120px;
   padding: 20px;
 }
 
-
-
+.store-product {
+  height: 540px;
+}

@@ -7,7 +7,7 @@ const Product = (props) => {
   return (
     <div key={id} className="m-3" style={{ width: "45%" }}>
       <div className="special-product-card mb-4">
-        <div className="">
+        <div className="store-product">
           <div className="d-flex flex-column align-items-center all-product-card ms-4">
             <img className="me-4" src={image} alt="img" />
             <div className="d-flex justify-content-around me-4">
@@ -24,7 +24,7 @@ const Product = (props) => {
               count={5}
               size={22}
             />
-            <p className="price"> 
+            <p className="price">
               <span>${price}</span> &nbsp; <strike>$899.90</strike>
             </p>
             <div className="discount-till">

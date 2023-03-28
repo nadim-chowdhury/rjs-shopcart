@@ -15,7 +15,7 @@ export default function Header() {
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0 text-uppercase me-1">
-                Hotline : 880 1831 125227 - 880 1971 258803
+                Hotline : 880 1971 258803
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function Header() {
                     <img src="images/cart.svg" alt="img" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark m-1">0</span>
-                      <p className="mb-0">$ 500</p>
+                      <p className="mb-0">$ 100</p>
                     </div>
                   </Link>
                 </div>
