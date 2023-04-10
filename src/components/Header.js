@@ -1,8 +1,16 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import { useSelector } from "react-redux";
 
 export default function Header() {
+  const items = useSelector((state) => state.cart);
+
+  let totalPrice = 0;
+  for (let i = 0; i < items.length; i++) {
+    totalPrice += items[i].price;
+  }
+
   return (
     <>
       <header className="header-top-strip py-3">
@@ -88,8 +96,10 @@ export default function Header() {
                   >
                     <img src="images/cart.svg" alt="img" />
                     <div className="d-flex flex-column gap-10">
-                      <span className="badge bg-white text-dark m-1">0</span>
-                      <p className="mb-0">$ 100</p>
+                      <span className="badge bg-white text-dark m-1 h-full fs-6">
+                        {items.length}
+                      </span>
+                      <p className="mb-0">${totalPrice}</p>
                     </div>
                   </Link>
                 </div>

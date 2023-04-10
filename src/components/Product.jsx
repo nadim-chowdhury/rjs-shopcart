@@ -1,9 +1,13 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
+import { useDispatch } from "react-redux";
+import { add } from "../features/cartSlice";
 import { Link } from "react-router-dom";
 
 const Product = (props) => {
   const { id, title, price, category, image } = props.product;
+  const dispatch = useDispatch();
+
   return (
     <div key={id} className="m-3" style={{ width: "45%" }}>
       <div className="special-product-card mb-4">
@@ -28,7 +32,12 @@ const Product = (props) => {
               <span>${price}</span> &nbsp; <strike>$899.90</strike>
             </p>
             <div className="discount-till">
-              <Link className="button mt-2">Add To Cart</Link>
+              <Link
+                onClick={() => dispatch(add(props.product))}
+                className="button mt-2"
+              >
+                Add To Cart
+              </Link>
             </div>
           </div>
         </div>

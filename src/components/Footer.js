@@ -24,7 +24,7 @@ export default function Footer() {
                   aria-label="Enter Your Email"
                   aria-describedby="basic-addon2"
                 />
-                <span class="input-group-text px-4 subscribe" id="basic-addon2">
+                <span className="input-group-text px-4 subscribe" id="basic-addon2">
                   Subscribe
                 </span>
               </div>

@@ -140,7 +140,7 @@ const OurStore = () => {
 
                 <div className="all-products d-flex justify-content-between flex-wrap mt-4">
                   {product.map((productData) => {
-                    return <Product product={productData} />;
+                    return <Product product={productData} key={productData.id} />;
                   })}
                 </div>
               </div>

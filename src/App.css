@@ -292,3 +292,18 @@ footer:not(:first-child) {
 .store-product {
   height: 540px;
 }
+
+.cart{
+  margin-bottom: 80px;
+}
+
+.cart-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 80px;
+}
+
+.cart-items-img{
+  width: 120px;
+}
