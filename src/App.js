@@ -28,7 +28,8 @@ function App() {
             <Route path="wishlist" element={<Wishlist />} />
             <Route path="login" element={<Login />} />
             <Route path="cart" element={<Cart />} />
-            <Route exact path="/products/:id" element={<ProductDetails />} />
+            <Route path="ourstore/cart" element={<Cart />} />
+            <Route exact path="/ourstore/:id" element={<ProductDetails />} />
           </Route>
         </Routes>
       </Router>

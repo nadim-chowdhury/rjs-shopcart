@@ -15,18 +15,34 @@ const Cart = () => {
       <BreadCrumb title="Cart" />
 
       <div className="cart">
-        {products.map((p) => (
-          <div key={p.id} className="cart-items shadow p-4 rounded">
-            <img src={p.image} alt={p.title} className="cart-items-img" />
+        <div className="container-xxl">
+          <div className="row">
+            {products.length === 0 && (
+              <h3 className="text-center bg-danger text-white py-5 mt-2 rounded-4">
+                Currently you don't have any product in your cart
+              </h3>
+            )}
 
-            <h4 className="m-4">{p.title}</h4>
-            <h5 className="m-4">${p.price}</h5>
+            {products.map((p) => (
+              <div key={p.id} className="cart-items shadow p-4 rounded">
+                <div className="d-flex align-items-center">
+                  <img src={p.image} alt={p.title} className="cart-items-img" />
+                  <h4 className="m-4">{p.title}</h4>
+                </div>
 
-            <button onClick={() => dispatch(remove(p.id))} className="button">
-              Remove
-            </button>
+                <div className="d-flex align-items-center">
+                  <h5 className="m-4">${p.price}</h5>
+                  <button
+                    onClick={() => dispatch(remove(p.id))}
+                    className="button"
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

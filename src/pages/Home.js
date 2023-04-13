@@ -273,12 +273,12 @@ export default function Home() {
             <div className="col-12">
               <h3 className="section-heading mb-5">Special Products</h3>
             </div>
-            <SpecialProduct width='col-3' src="images/headphone.jpg" />
-            <SpecialProduct width='col-3' src="images/laptop.jpg" />
-            <SpecialProduct width='col-3' src="images/acc.jpg" />
-            <SpecialProduct width='col-3' src="images/acc.jpg" />
-            <SpecialProduct width='col-3' src="images/laptop.jpg" />
-            <SpecialProduct width='col-3' src="images/headphone.jpg" />
+            <SpecialProduct width="col-3" src="images/headphone.jpg" />
+            <SpecialProduct width="col-3" src="images/laptop.jpg" />
+            <SpecialProduct width="col-3" src="images/acc.jpg" />
+            <SpecialProduct width="col-3" src="images/acc.jpg" />
+            <SpecialProduct width="col-3" src="images/laptop.jpg" />
+            <SpecialProduct width="col-3" src="images/headphone.jpg" />
           </div>
         </div>
       </section>

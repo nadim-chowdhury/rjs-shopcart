@@ -1,6 +1,6 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const SpecialProduct = ({ src }) => {
   return (
@@ -24,9 +24,9 @@ const SpecialProduct = ({ src }) => {
             <p className="price">
               <span>$499.90</span> &nbsp; <strike>$899.90</strike>
             </p>
-            <div className="discount-till">
+            {/* <div className="discount-till">
               <Link className="button mt-2">Add To Cart</Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

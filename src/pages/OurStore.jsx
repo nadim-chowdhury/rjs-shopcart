@@ -2,9 +2,18 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import BreadCrumb from "../components/BreadCrumb";
 import Product from "../components/Product";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const OurStore = () => {
   const [product, setProduct] = useState([]);
+
+  const items = useSelector((state) => state.cart);
+
+  let totalPrice = 0;
+  for (let i = 0; i < items.length; i++) {
+    totalPrice += items[i].price;
+  }
 
   const fetchData = () => {
     return fetch("https://fakestoreapi.com/products")
@@ -17,13 +26,13 @@ const OurStore = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <Helmet>
         <title>Store</title>
       </Helmet>
       <BreadCrumb title="Store" />
 
-      <div className="store-wrapper home-wrapper-2 py-5">
+      <div className="store-wrapper home-wrapper-2 py-5 position-relative">
         <div className="container-xxl">
           <div className="row">
             <div className="col-3">
@@ -140,15 +149,34 @@ const OurStore = () => {
 
                 <div className="all-products d-flex justify-content-between flex-wrap mt-4">
                   {product.map((productData) => {
-                    return <Product product={productData} key={productData.id} />;
+                    return (
+                      <Product product={productData} key={productData.id} />
+                    );
                   })}
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div className="position-fixed bottom-0 end-0 m-4 p-2 rounded-4 cart-x">
+          <div>
+            <Link
+              to="cart"
+              className="d-flex align-items-center gap-10 text-white"
+            >
+              <img src="images/cart.svg" alt="img" />
+              <div className="d-flex flex-column gap-10">
+                <span className="badge bg-white text-dark m-1 h-full fs-6">
+                  {items.length}
+                </span>
+                <p className="mb-0">${totalPrice}</p>
+              </div>
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

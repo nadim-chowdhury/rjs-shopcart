@@ -4,7 +4,7 @@ import ReactStars from "react-rating-stars-component";
 
 export default function ProductCard(props) {
   return (
-    <div className="col-2">
+    <div className="col-2 mb-4">
       <Link to="/" className="blog-card">
         <div className="wishlist-icon d-flex justify-content-end">
           <Link>
