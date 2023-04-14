@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-distracting-elements */
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
@@ -165,6 +166,12 @@ export default function Header() {
           </div>
         </div>
       </header>
+
+      <marquee loop className="bg-danger fs-5 text-white py-2">
+        All Demo products in home pages are static. For using functionality go
+        to Store page and Cart page. Store page's all products are coming from
+        API.
+      </marquee>
     </>
   );
 }
