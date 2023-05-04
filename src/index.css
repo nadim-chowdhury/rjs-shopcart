@@ -26,3 +26,31 @@ a {
 li {
   list-style-type: none;
 }
+
+.search-item {
+  z-index: 5;
+  background-color: white;
+  width: 95.5%;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.search-item-details {
+  display: flex;
+  padding: 10px;
+}
+
+.search-item-details img {
+  width: 80px;
+  height: 80px;
+  margin-right: 40px;
+  object-fit: contain;
+}
+
+.search-item-details a {
+  color: #131921;
+}
+
+.input-group-text {
+  cursor: pointer;
+}

@@ -12,8 +12,12 @@ import Wishlist from "./pages/Wishlist";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import ProductDetails from "./components/ProductDetails";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "./firebase";
 
 function App() {
+  const [user] = useAuthState(auth);
+
   return (
     <>
       <Router>
@@ -27,8 +31,8 @@ function App() {
             <Route path="compare-products" element={<CompareProduct />} />
             <Route path="wishlist" element={<Wishlist />} />
             <Route path="login" element={<Login />} />
-            <Route path="cart" element={<Cart />} />
-            <Route path="ourstore/cart" element={<Cart />} />
+            <Route path="cart" element={user ? <Cart /> : <Login />} />
+            <Route path="ourstore/cart" element={user ? <Cart /> : <Login />} />
             <Route exact path="/ourstore/:id" element={<ProductDetails />} />
           </Route>
         </Routes>

@@ -12,6 +12,7 @@ export default function Home() {
       <Helmet>
         <title>ShopCart</title>
       </Helmet>
+
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">

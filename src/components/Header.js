@@ -2,18 +2,35 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useSelector } from "react-redux";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../firebase";
+import axios from "axios";
+import { useEffect } from "react";
+import { useState } from "react";
 
 export default function Header() {
   const items = useSelector((state) => state.cart);
+  const [user] = useAuthState(auth);
+  const [query, setQuery] = useState("");
+  console.log(user);
 
   let totalPrice = 0;
   for (let i = 0; i < items.length; i++) {
     totalPrice += items[i].price;
   }
 
+  const [allProducts, setAllProducts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://fakestoreapi.com/products")
+      .then((res) => setAllProducts(res.data));
+  }, [query]);
+
   return (
-    <>
+    <div>
       <header className="header-top-strip py-3">
         <div className="container-xxl">
           <div className="row">
@@ -41,7 +58,8 @@ export default function Header() {
                 </Link>
               </h2>
             </div>
-            <div className="col-5">
+
+            <div className="col-5 position-relative">
               <div className="input-group">
                 <input
                   type="text"
@@ -49,12 +67,50 @@ export default function Header() {
                   placeholder="Search Your Product Here"
                   aria-label="Search Your Product Here"
                   aria-describedby="basic-addon2"
+                  onChange={(e) => setQuery(e.target.value)}
                 />
-                <span className="input-group-text px-4" id="basic-addon2">
-                  <BsSearch />
-                </span>
+                {query.length > 0 ? (
+                  <span
+                    className="input-group-text px-4"
+                    id="basic-addon2"
+                    onClick={() => setQuery("")}
+                  >
+                    <AiOutlineCloseCircle />
+                  </span>
+                ) : (
+                  <span className="input-group-text px-4" id="basic-addon2">
+                    <BsSearch />
+                  </span>
+                )}
               </div>
+              {query.length > 0 ? (
+                <div className="position-absolute search-item">
+                  {allProducts
+                    .filter((item) => {
+                      return query.toLowerCase() === ""
+                        ? null
+                        : item.title.toLowerCase().includes(query);
+                    })
+                    .map((item) => (
+                      <div key={item.id} className="search-item-details">
+                        <img src={item.image} alt="" />
+                        <div>
+                          <h6>
+                            <Link
+                              to={`/ourstore/${item.id}`}
+                              onClick={() => setQuery("")}
+                            >
+                              {item.title}
+                            </Link>
+                          </h6>
+                          <h5>${item.price}</h5>
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              ) : null}
             </div>
+
             <div className="col-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
@@ -86,7 +142,14 @@ export default function Header() {
                   >
                     <img src="images/user.svg" alt="img" />
                     <p className="mb-0">
-                      Log In <br /> My Account
+                      {user ? (
+                        <span className="text-warning">
+                          {user.email.slice(0, 6)}...
+                        </span>
+                      ) : (
+                        "Log In"
+                      )}
+                      <br /> My Account
                     </p>
                   </Link>
                 </div>
@@ -172,6 +235,6 @@ export default function Header() {
         to Store page and Cart page. Store page's all products are coming from
         API.
       </marquee>
-    </>
+    </div>
   );
 }
