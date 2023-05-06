@@ -16,8 +16,8 @@ export default function Header() {
   const [query, setQuery] = useState("");
   console.log(user);
 
-  let totalPrice = 0;
-  for (let i = 0; i < items.length; i++) {
+  let totalPrice = 0.0;
+  for (let i = 0.0; i < items.length; i++) {
     totalPrice += items[i].price;
   }
 
@@ -50,16 +50,24 @@ export default function Header() {
 
       <header className="header-upper py-3">
         <div className="container-xxl">
-          <div className="row align-items-center">
-            <div className="col-2 align-items-center">
-              <h2>
-                <Link to="/" className="text-white mt-2">
-                  <span style={{ color: "#febd69" }}>SHOP</span>CART
+          <div className="row align-items-center justify-content-between">
+            <div className="col-3 align-items-center">
+              <h1 className="flex">
+                <Link
+                  to="/"
+                  className="text-white mt-2 d-flex align-items-center justify-content-between"
+                >
+                  <span style={{ color: "#febd69" }}>SHOP</span>CART &nbsp;{" "}
+                  <span className="fs-6 mb-0">
+                    SHOP
+                    <br />
+                    MORE
+                  </span>
                 </Link>
-              </h2>
+              </h1>
             </div>
 
-            <div className="col-5 position-relative">
+            <div className="col-4 position-relative">
               <div className="input-group">
                 <input
                   type="text"
@@ -159,11 +167,13 @@ export default function Header() {
                     className="d-flex align-items-center gap-10 text-white"
                   >
                     <img src="images/cart.svg" alt="img" />
-                    <div className="d-flex flex-column gap-10">
+                    <div className="d-flex flex-column align-items-center gap-10">
                       <span className="badge bg-white text-dark m-1 h-full fs-6">
                         {items.length}
                       </span>
-                      <p className="mb-0">${totalPrice}</p>
+                      <p className="mb-0">
+                        ${totalPrice === 0 ? "0.00" : Math.floor(totalPrice)}
+                      </p>
                     </div>
                   </Link>
                 </div>

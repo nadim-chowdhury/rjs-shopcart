@@ -1,7 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-// import { Link } from "react-router-dom";
+import { BsGoogle } from "react-icons/bs";
 import BreadCrumb from "../components/BreadCrumb";
+import "react-toastify/dist/ReactToastify.css";
 
 import {
   useSignInWithGoogle,
@@ -22,8 +23,6 @@ const Login = () => {
   const [signInWithGoogle] = useSignInWithGoogle(auth);
   const [signOut] = useSignOut(auth);
   const [user] = useAuthState(auth);
-
-  // console.log(user);
 
   return (
     <div>
@@ -61,7 +60,6 @@ const Login = () => {
                     />
                   </form>
                 )}
-                {/* <Link>Forgot Password ?</Link> */}
                 <br />
 
                 {user ? (
@@ -70,7 +68,7 @@ const Login = () => {
                     onClick={async () => {
                       const success = await signOut();
                       if (success) {
-                        alert("You are sign out");
+                        alert("Sign Out Successfull");
                       }
                     }}
                   >
@@ -78,30 +76,33 @@ const Login = () => {
                   </button>
                 ) : (
                   <div>
-                    <button
-                      className="button mt-3 w-25 me-4"
-                      onClick={() =>
-                        signInWithEmailAndPassword(email, password)
-                      }
-                    >
-                      Sign in
-                    </button>
-                    <span>OR</span>
-                    <button
-                      className="button mt-3 w-25 ms-4"
-                      onClick={() =>
-                        createUserWithEmailAndPassword(email, password)
-                      }
-                    >
-                      Sign up
-                    </button>
+                    <div className="d-flex align-items-center">
+                      <button
+                        className="button w-100 me-4"
+                        onClick={() =>
+                          signInWithEmailAndPassword(email, password)
+                        }
+                      >
+                        Sign in
+                      </button>
+                      <span>OR</span>
+                      <button
+                        className="button w-100 ms-4"
+                        onClick={() =>
+                          createUserWithEmailAndPassword(email, password)
+                        }
+                      >
+                        Sign up
+                      </button>
+                    </div>
 
                     <div>
                       <button
-                        className="button mt-3 w-100"
+                        className="button mt-3 w-100 d-flex align-items-center justify-content-center"
                         onClick={() => signInWithGoogle()}
                       >
-                        Sign in With Google
+                        <BsGoogle />
+                        <span className="ms-2">Sign in With Google</span>
                       </button>
                     </div>
                   </div>

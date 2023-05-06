@@ -15,8 +15,8 @@ const OurStore = () => {
     totalPrice += items[i].price;
   }
 
-  const fetchData = () => {
-    return fetch("https://fakestoreapi.com/products")
+  const fetchData = async () => {
+    return await fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((data) => setProduct(data));
   };
@@ -159,21 +159,24 @@ const OurStore = () => {
           </div>
         </div>
 
-        <div className="position-fixed bottom-0 end-0 m-4 p-2 rounded-4 cart-x">
-          <div>
-            <Link
-              to="cart"
-              className="d-flex align-items-center gap-10 text-white"
-            >
-              <img src="images/cart.svg" alt="img" />
-              <div className="d-flex flex-column gap-10">
-                <span className="badge bg-white text-dark m-1 h-full fs-6">
-                  {items.length}
-                </span>
-                <p className="mb-0">${totalPrice}</p>
-              </div>
-            </Link>
-          </div>
+        <div className="position-fixed bottom-0 end-0 m-4 p-2 rounded-3 cart-x">
+          {items.length > 0 ? (
+            <div>
+              <Link
+                to="cart"
+                className="d-flex align-items-center gap-10 text-white"
+              >
+                <div className="d-flex flex-column align-items-center gap-10">
+                  <span className="badge bg-white text-dark m-1 h-full fs-6">
+                    {items.length}
+                  </span>
+                  <p className="mb-0">
+                    ${totalPrice === 0 ? "0.00" : Math.floor(totalPrice)}
+                  </p>
+                </div>
+              </Link>
+            </div>
+          ) : null}
         </div>
       </div>
     </>

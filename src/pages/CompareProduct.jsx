@@ -28,33 +28,9 @@ const CompareProduct = () => {
                     $151
                   </h5>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci quibusdam possimus quo recusandae placeat iste
-                    fugiat! Amet alias enim illo quae nesciunt soluta placeat
-                    nobis totam atque eum dignissimos dolores ad, quas eos qui
-                    nulla commodi error quo magnam earum doloremque dolore
-                    labore at architecto? Quidem ad impedit debitis cum labore
-                    accusantium consectetur, sapiente saepe laborum delectus
-                    dicta amet illum veniam animi, fugiat sunt error architecto
-                    tempore minima sit aspernatur voluptatem distinctio suscipit
-                    consequatur. Dolores molestias deleniti eligendi debitis
-                    atque illum dicta porro, saepe doloribus eius unde omnis
-                    sint quos laborum maxime obcaecati praesentium laboriosam
-                    tenetur similique est hic reprehenderit! Doloribus sed ipsa
-                    officiis sunt voluptatum? Quam saepe velit, necessitatibus
-                    porro repellat magni voluptate eum magnam est excepturi
-                    natus, voluptas autem? Velit maiores quaerat ipsum saepe
-                    facere amet possimus natus enim distinctio sequi, recusandae
-                    doloribus impedit temporibus minus consectetur. A ipsa sit
-                    doloremque voluptatum voluptates nisi. Quibusdam quidem,
-                    voluptate, pariatur aspernatur, tenetur itaque fuga aperiam
-                    consectetur nobis culpa neque maiores fugit vitae
-                    praesentium eaque ad maxime doloribus ducimus. Iste ut ipsa,
-                    eaque quo accusantium nesciunt provident alias dignissimos
-                    odit, molestiae, recusandae optio tempore omnis quod unde
-                    necessitatibus illum incidunt quasi quis excepturi! Facilis
-                    perferendis earum consectetur iste omnis sapiente
-                    temporibus.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto hic quae inventore nobis sapiente id quas ipsa
+                    autem ut assumenda!
                   </p>
                 </div>
               </div>
@@ -70,33 +46,9 @@ const CompareProduct = () => {
                     $151
                   </h5>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci quibusdam possimus quo recusandae placeat iste
-                    fugiat! Amet alias enim illo quae nesciunt soluta placeat
-                    nobis totam atque eum dignissimos dolores ad, quas eos qui
-                    nulla commodi error quo magnam earum doloremque dolore
-                    labore at architecto? Quidem ad impedit debitis cum labore
-                    accusantium consectetur, sapiente saepe laborum delectus
-                    dicta amet illum veniam animi, fugiat sunt error architecto
-                    tempore minima sit aspernatur voluptatem distinctio suscipit
-                    consequatur. Dolores molestias deleniti eligendi debitis
-                    atque illum dicta porro, saepe doloribus eius unde omnis
-                    sint quos laborum maxime obcaecati praesentium laboriosam
-                    tenetur similique est hic reprehenderit! Doloribus sed ipsa
-                    officiis sunt voluptatum? Quam saepe velit, necessitatibus
-                    porro repellat magni voluptate eum magnam est excepturi
-                    natus, voluptas autem? Velit maiores quaerat ipsum saepe
-                    facere amet possimus natus enim distinctio sequi, recusandae
-                    doloribus impedit temporibus minus consectetur. A ipsa sit
-                    doloremque voluptatum voluptates nisi. Quibusdam quidem,
-                    voluptate, pariatur aspernatur, tenetur itaque fuga aperiam
-                    consectetur nobis culpa neque maiores fugit vitae
-                    praesentium eaque ad maxime doloribus ducimus. Iste ut ipsa,
-                    eaque quo accusantium nesciunt provident alias dignissimos
-                    odit, molestiae, recusandae optio tempore omnis quod unde
-                    necessitatibus illum incidunt quasi quis excepturi! Facilis
-                    perferendis earum consectetur iste omnis sapiente
-                    temporibus.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto hic quae inventore nobis sapiente id quas ipsa
+                    autem ut assumenda!
                   </p>
                 </div>
               </div>
@@ -112,33 +64,9 @@ const CompareProduct = () => {
                     $151
                   </h5>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci quibusdam possimus quo recusandae placeat iste
-                    fugiat! Amet alias enim illo quae nesciunt soluta placeat
-                    nobis totam atque eum dignissimos dolores ad, quas eos qui
-                    nulla commodi error quo magnam earum doloremque dolore
-                    labore at architecto? Quidem ad impedit debitis cum labore
-                    accusantium consectetur, sapiente saepe laborum delectus
-                    dicta amet illum veniam animi, fugiat sunt error architecto
-                    tempore minima sit aspernatur voluptatem distinctio suscipit
-                    consequatur. Dolores molestias deleniti eligendi debitis
-                    atque illum dicta porro, saepe doloribus eius unde omnis
-                    sint quos laborum maxime obcaecati praesentium laboriosam
-                    tenetur similique est hic reprehenderit! Doloribus sed ipsa
-                    officiis sunt voluptatum? Quam saepe velit, necessitatibus
-                    porro repellat magni voluptate eum magnam est excepturi
-                    natus, voluptas autem? Velit maiores quaerat ipsum saepe
-                    facere amet possimus natus enim distinctio sequi, recusandae
-                    doloribus impedit temporibus minus consectetur. A ipsa sit
-                    doloremque voluptatum voluptates nisi. Quibusdam quidem,
-                    voluptate, pariatur aspernatur, tenetur itaque fuga aperiam
-                    consectetur nobis culpa neque maiores fugit vitae
-                    praesentium eaque ad maxime doloribus ducimus. Iste ut ipsa,
-                    eaque quo accusantium nesciunt provident alias dignissimos
-                    odit, molestiae, recusandae optio tempore omnis quod unde
-                    necessitatibus illum incidunt quasi quis excepturi! Facilis
-                    perferendis earum consectetur iste omnis sapiente
-                    temporibus.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto hic quae inventore nobis sapiente id quas ipsa
+                    autem ut assumenda!
                   </p>
                 </div>
               </div>
@@ -156,33 +84,9 @@ const CompareProduct = () => {
                     $151
                   </h5>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci quibusdam possimus quo recusandae placeat iste
-                    fugiat! Amet alias enim illo quae nesciunt soluta placeat
-                    nobis totam atque eum dignissimos dolores ad, quas eos qui
-                    nulla commodi error quo magnam earum doloremque dolore
-                    labore at architecto? Quidem ad impedit debitis cum labore
-                    accusantium consectetur, sapiente saepe laborum delectus
-                    dicta amet illum veniam animi, fugiat sunt error architecto
-                    tempore minima sit aspernatur voluptatem distinctio suscipit
-                    consequatur. Dolores molestias deleniti eligendi debitis
-                    atque illum dicta porro, saepe doloribus eius unde omnis
-                    sint quos laborum maxime obcaecati praesentium laboriosam
-                    tenetur similique est hic reprehenderit! Doloribus sed ipsa
-                    officiis sunt voluptatum? Quam saepe velit, necessitatibus
-                    porro repellat magni voluptate eum magnam est excepturi
-                    natus, voluptas autem? Velit maiores quaerat ipsum saepe
-                    facere amet possimus natus enim distinctio sequi, recusandae
-                    doloribus impedit temporibus minus consectetur. A ipsa sit
-                    doloremque voluptatum voluptates nisi. Quibusdam quidem,
-                    voluptate, pariatur aspernatur, tenetur itaque fuga aperiam
-                    consectetur nobis culpa neque maiores fugit vitae
-                    praesentium eaque ad maxime doloribus ducimus. Iste ut ipsa,
-                    eaque quo accusantium nesciunt provident alias dignissimos
-                    odit, molestiae, recusandae optio tempore omnis quod unde
-                    necessitatibus illum incidunt quasi quis excepturi! Facilis
-                    perferendis earum consectetur iste omnis sapiente
-                    temporibus.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto hic quae inventore nobis sapiente id quas ipsa
+                    autem ut assumenda!
                   </p>
                 </div>
               </div>
