@@ -104,46 +104,46 @@ export default function Home() {
 
       <section className="home-wrapper-2 pt-5">
         <div className="container-xxl">
-          <div className="grid gap-3">
-            {/* <div className="col-sm-12"> */}
-            {/* <div className="services d-flex justify-content-between align-items-center py-5"> */}
-            <div className="d-flex align-items-center gap-15 g-col-6">
-              <img src="images/service.png" alt="img" />
-              <div>
-                <h6>Free Shipping</h6>
-                <p className="mb-0">From all orders over $50</p>
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="services d-flex justify-content-between align-items-center py-5">
+                <div className="d-flex align-items-center gap-15 g-col-6">
+                  <img src="images/service.png" alt="img" />
+                  <div>
+                    <h6>Free Shipping</h6>
+                    <p className="mb-0">From all orders over $50</p>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center gap-15 g-col-6">
+                  <img src="images/service-02.png" alt="img" />
+                  <div>
+                    <h6>Daily Serprice Offers</h6>
+                    <p className="mb-0">Save upto 25%</p>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center gap-15 g-col-6">
+                  <img src="images/service-03.png" alt="img" />
+                  <div>
+                    <h6>Suppurt 24/7</h6>
+                    <p className="mb-0">Shop with an expert</p>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center gap-15 g-col-6">
+                  <img src="images/service-04.png" alt="img" />
+                  <div>
+                    <h6>Affordable Prices</h6>
+                    <p className="mb-0">Get factory default prices</p>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center gap-15 g-col-6">
+                  <img src="images/service-05.png" alt="img" />
+                  <div>
+                    <h6>Secure Payments</h6>
+                    <p className="mb-0">100% protected</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="d-flex align-items-center gap-15 g-col-6">
-              <img src="images/service-02.png" alt="img" />
-              <div>
-                <h6>Daily Serprice Offers</h6>
-                <p className="mb-0">Save upto 25%</p>
-              </div>
-            </div>
-            <div className="d-flex align-items-center gap-15 g-col-6">
-              <img src="images/service-03.png" alt="img" />
-              <div>
-                <h6>Suppurt 24/7</h6>
-                <p className="mb-0">Shop with an expert</p>
-              </div>
-            </div>
-            <div className="d-flex align-items-center gap-15 g-col-6">
-              <img src="images/service-04.png" alt="img" />
-              <div>
-                <h6>Affordable Prices</h6>
-                <p className="mb-0">Get factory default prices</p>
-              </div>
-            </div>
-            <div className="d-flex align-items-center gap-15 g-col-6">
-              <img src="images/service-05.png" alt="img" />
-              <div>
-                <h6>Secure Payments</h6>
-                <p className="mb-0">100% protected</p>
-              </div>
-            </div>
-            {/* </div> */}
-            {/* </div> */}
           </div>
         </div>
       </section>
