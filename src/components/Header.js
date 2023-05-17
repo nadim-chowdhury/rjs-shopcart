@@ -30,17 +30,17 @@ export default function Header() {
   }, [query]);
 
   return (
-    <div>
+    <>
       <header className="header-top-strip py-3">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6">
+            <div className="col-sm-6">
               <p className="text-white mb-0 text-uppercase">
                 Free Shiping Over $100 & Free Returns
               </p>
             </div>
-            <div className="col-6">
-              <p className="text-end text-white mb-0 text-uppercase me-1">
+            <div className="col-sm-6">
+              <p className="text-sm-end text-white mb-0 text-uppercase me-1">
                 Hotline : 880 1971 258803
               </p>
             </div>
@@ -51,7 +51,7 @@ export default function Header() {
       <header className="header-upper py-3">
         <div className="container-xxl">
           <div className="row align-items-center justify-content-between">
-            <div className="col-3 align-items-center">
+            <div className="col-sm-3 align-items-center">
               <h1 className="flex">
                 <Link
                   to="/"
@@ -67,10 +67,11 @@ export default function Header() {
               </h1>
             </div>
 
-            <div className="col-4 position-relative">
+            <div className="col-sm-4 position-relative">
               <div className="input-group">
                 <input
                   type="text"
+                  value={query}
                   className="form-control py-2"
                   placeholder="Search Your Product Here"
                   aria-label="Search Your Product Here"
@@ -119,7 +120,7 @@ export default function Header() {
               ) : null}
             </div>
 
-            <div className="col-5">
+            <div className="col-sm-5 my-2">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
                   <Link
@@ -240,11 +241,11 @@ export default function Header() {
         </div>
       </header>
 
-      <marquee loop className="bg-danger fs-5 text-white py-2">
+      {/* <marquee loop className="bg-danger fs-5 text-white py-2">
         All Demo products in home pages are static. For using functionality go
         to Store page and Cart page. Store page's all products are coming from
         API.
-      </marquee>
-    </div>
+      </marquee> */}
+    </>
   );
 }

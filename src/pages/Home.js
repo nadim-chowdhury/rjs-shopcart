@@ -8,7 +8,7 @@ import SpecialProduct from "../components/SpecialProduct";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Helmet>
         <title>ShopCart</title>
       </Helmet>
@@ -16,7 +16,7 @@ export default function Home() {
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6 my-auto">
+            <div className="col-sm-6 my-auto">
               <div className="main-banner position-relative p-1">
                 <img
                   src="images/main-banner-1.jpg"
@@ -35,7 +35,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-sm-6">
               <div className="d-flex flex-wrap justify-content-between align-items-center">
                 <div className="small-banner position-relative p-2">
                   <img
@@ -104,46 +104,46 @@ export default function Home() {
 
       <section className="home-wrapper-2 pt-5">
         <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <div className="services d-flex justify-content-between align-items-center py-5">
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/service.png" alt="img" />
-                  <div>
-                    <h6>Free Shipping</h6>
-                    <p className="mb-0">From all orders over $50</p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-02.png" alt="img" />
-                  <div>
-                    <h6>Daily Serprice Offers</h6>
-                    <p className="mb-0">Save upto 25%</p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-03.png" alt="img" />
-                  <div>
-                    <h6>Suppurt 24/7</h6>
-                    <p className="mb-0">Shop with an expert</p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-04.png" alt="img" />
-                  <div>
-                    <h6>Affordable Prices</h6>
-                    <p className="mb-0">Get factory default prices</p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-05.png" alt="img" />
-                  <div>
-                    <h6>Secure Payments</h6>
-                    <p className="mb-0">100% protected payments</p>
-                  </div>
-                </div>
+          <div className="grid gap-3">
+            {/* <div className="col-sm-12"> */}
+            {/* <div className="services d-flex justify-content-between align-items-center py-5"> */}
+            <div className="d-flex align-items-center gap-15 g-col-6">
+              <img src="images/service.png" alt="img" />
+              <div>
+                <h6>Free Shipping</h6>
+                <p className="mb-0">From all orders over $50</p>
               </div>
             </div>
+            <div className="d-flex align-items-center gap-15 g-col-6">
+              <img src="images/service-02.png" alt="img" />
+              <div>
+                <h6>Daily Serprice Offers</h6>
+                <p className="mb-0">Save upto 25%</p>
+              </div>
+            </div>
+            <div className="d-flex align-items-center gap-15 g-col-6">
+              <img src="images/service-03.png" alt="img" />
+              <div>
+                <h6>Suppurt 24/7</h6>
+                <p className="mb-0">Shop with an expert</p>
+              </div>
+            </div>
+            <div className="d-flex align-items-center gap-15 g-col-6">
+              <img src="images/service-04.png" alt="img" />
+              <div>
+                <h6>Affordable Prices</h6>
+                <p className="mb-0">Get factory default prices</p>
+              </div>
+            </div>
+            <div className="d-flex align-items-center gap-15 g-col-6">
+              <img src="images/service-05.png" alt="img" />
+              <div>
+                <h6>Secure Payments</h6>
+                <p className="mb-0">100% protected</p>
+              </div>
+            </div>
+            {/* </div> */}
+            {/* </div> */}
           </div>
         </div>
       </section>
@@ -151,7 +151,7 @@ export default function Home() {
       <section className="home-wrapper-2 pt-5">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
+            <div className="col-sm-12">
               <div className="categories d-flex justify-content-between align-items-center flex-wrap">
                 <div className="d-flex gap-10 align-items-center justify-content-around">
                   <div>
@@ -225,7 +225,7 @@ export default function Home() {
       <section className="blog-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
+            <div className="col-sm-12">
               <h3 className="section-heading mb-5">Featured Collections</h3>
             </div>
 
@@ -271,15 +271,15 @@ export default function Home() {
       <section className="blog-wrapper pb-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
+            <div className="col-sm-12">
               <h3 className="section-heading mb-5">Special Products</h3>
             </div>
-            <SpecialProduct width="col-3" src="images/headphone.jpg" />
-            <SpecialProduct width="col-3" src="images/laptop.jpg" />
-            <SpecialProduct width="col-3" src="images/acc.jpg" />
-            <SpecialProduct width="col-3" src="images/acc.jpg" />
-            <SpecialProduct width="col-3" src="images/laptop.jpg" />
-            <SpecialProduct width="col-3" src="images/headphone.jpg" />
+            <SpecialProduct width="col-sm-3" src="images/headphone.jpg" />
+            <SpecialProduct width="col-sm-3" src="images/laptop.jpg" />
+            <SpecialProduct width="col-sm-3" src="images/acc.jpg" />
+            <SpecialProduct width="col-sm-3" src="images/acc.jpg" />
+            <SpecialProduct width="col-sm-3" src="images/laptop.jpg" />
+            <SpecialProduct width="col-sm-3" src="images/headphone.jpg" />
           </div>
         </div>
       </section>
@@ -287,7 +287,7 @@ export default function Home() {
       <section className="marquee-wrapper py-5">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
+            <div className="col-sm-12">
               <div className="marquee-inner-wrapper bg-white p-3">
                 <Marquee className="d-flex justify-content-between">
                   <div className="mx-4 mq-img w-25">
@@ -348,6 +348,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

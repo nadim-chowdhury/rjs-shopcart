@@ -8,14 +8,14 @@ export default function Footer() {
       <footer className="py-4">
         <div className="container-xxl">
           <div className="row align-items-center">
-            <div className="col-5">
+            <div className="col-sm-5">
               <div className="footer-top-data d-flex gap-20 align-items-center">
                 <img src="images/newsletter.png" alt="img" />
                 <h2 className="mb-0 text-white">Sign Up for Newsletter</h2>
               </div>
             </div>
 
-            <div className="col-7">
+            <div className="col-sm-7">
               <div className="input-group">
                 <input
                   type="text"
@@ -24,7 +24,10 @@ export default function Footer() {
                   aria-label="Enter Your Email"
                   aria-describedby="basic-addon2"
                 />
-                <span className="input-group-text px-4 subscribe" id="basic-addon2">
+                <span
+                  className="input-group-text px-4 subscribe"
+                  id="basic-addon2"
+                >
                   Subscribe
                 </span>
               </div>
@@ -35,8 +38,8 @@ export default function Footer() {
       <footer className="py-4">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-4">
-              <h4 className="text-white mb-3">Contact Us</h4>
+            <div className="col-sm-4">
+              <h4 className="text-white my-3">Contact Us</h4>
               <div className="footer-links">
                 <address className="text-white fs-6 py-2 mb-0">
                   East Jurain <br /> Dhaka-1204, Bangladesh
@@ -73,8 +76,8 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-3">
-              <h4 className="text-white mb-3">Information</h4>
+            <div className="col-sm-3">
+              <h4 className="text-white my-3">Information</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="text-white py-2" to="/">
                   Privacy Policy
@@ -90,8 +93,8 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="col-3">
-              <h4 className="text-white mb-3">Account</h4>
+            <div className="col-sm-3">
+              <h4 className="text-white my-3">Account</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="text-white py-2" to="/">
                   About Us
@@ -107,8 +110,8 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="col-2">
-              <h4 className="text-white mb-3">Quick Links</h4>
+            <div className="col-sm-2">
+              <h4 className="text-white my-3">Quick Links</h4>
               <div className="footer-links d-flex flex-column">
                 <Link className="text-white py-2" to="/">
                   Laptops
@@ -130,7 +133,7 @@ export default function Footer() {
       <footer className="py-3">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
+            <div className="col-sm-12">
               <p className="d-flex justify-content-center text-white mb-0 text-uppercase">
                 <span className="copy">&copy;</span>
                 <span
